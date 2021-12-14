@@ -6,5 +6,26 @@
 4. Visualization with GGplot2
 
 ## Part 1: Explore the dataset
+1.
+```
 
+2.
+```
+
+3.
+```
+
+4.
+```
+
+5.
+```
+
+6.
+```
+
+7.
+```
+
+8.
 ```
