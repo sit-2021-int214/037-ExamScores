@@ -1,10 +1,9 @@
-# GroupID-Datasetname
+# 037-StudentsPerformance
 
-Original Datasets from: [safe-sit23 github](https://github.com/safesit23/INT214-Statistics/blob/main/datasets/products_original.csv)
+Original Datasets from: [Kaggle: Students Performance in Exams](https://www.kaggle.com/spscientist/students-performance-in-exams)
 
-### About's Products Datasets
+### About's Students Performance in Exams Datasets
 
-This dataset is about's sample uniqlo product that sell in 2021. It includes productID, name of products, type of products, price of products, and number of sold.
 
 ## Overview
 
@@ -46,9 +45,6 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 1. ชื่อ นามสกุล StudentID: 63130500xxx
 2. ชื่อ นามสกุล StudentID: 63130500xxx
-3. ชื่อ นามสกุล StudentID: 63130500xxx
-4. ชื่อ นามสกุล StudentID: 63130500xxx
-5. ชื่อ นามสกุล StudentID: 63130500xxx
 
 ### Instructor
 
