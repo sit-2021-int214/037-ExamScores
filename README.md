@@ -6,9 +6,7 @@ Original Datasets from: [Kaggle: Students Performance in Exams](https://www.kagg
 This data set consists of the marks secured by the students in various subjects
 
 ## Overview
-
-// Write Statement here
-E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องทำความเข้าใจอิทธิพลของภูมิหลังของผู้ปกครอง การเตรียมการสอบ ฯลฯ ที่มีผลต่อประสิทธิภาพของนักเรียน
+กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องทำความเข้าใจอิทธิพลของภูมิหลังของผู้ปกครอง การเตรียมการสอบ ฯลฯ ที่มีผลต่อประสิทธิภาพของนักเรียน
 
 ### Steps
 
