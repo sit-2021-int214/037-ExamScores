@@ -1,6 +1,5 @@
 # Sample file
 
-View(mtcars)
 library(dplyr)
 library(readr)
 library(ggplot2)
@@ -48,11 +47,8 @@ StudentsPerformance %>% ggplot(aes(x=`gender`))+
   geom_bar(aes(fill= `lunch`))
 
 ##graph2
-g <- ggplot(StudentsPerformance,aes(x="",y=`gender`,fill= `parental level of education`))+
-  geom_bar(width = 1, stat = "identity")
-g
+StudentsPerformance %>%ggplot(aes(x=`race/ethnicity`))+
+  geom_bar(aes(fill= `parental level of education`))
 
-pie<-g + coord_polar("y", start=1)
-pie + theme(axis.text.x=element_blank())+
-scale_fill_brewer(palette="Set2")
+
 
