@@ -9,19 +9,19 @@ StudentsPerformance<-read_csv("https://raw.githubusercontent.com/sit-2021-int214
 View(StudentsPerformance)
 
 
-#5.raceใดที่มีคะแนนเฉลี่ยในmath score
+#1.raceใดที่มีคะแนนเฉลี่ยในmath score
 StudentsPerformance%>%group_by(`race/ethnicity`)%>%
 summarise(avg=mean(`math score`))%>%
 arrange(desc(`race/ethnicity`))%>%head(1)
 
-#6.คนที่เข้าคอร์สเตรียมสอบมีคะแนนวิชาreadingเฉลี่ยเท่าไหร่
+#2.คนที่เข้าคอร์สเตรียมสอบมีคะแนนวิชาreadingเฉลี่ยเท่าไหร่
 
 StudentsPerformance%>%group_by(`test preparation course`)%>%
 summarise(avg=mean(`reading score`))%>%  
 filter(`test preparation course` == 'completed')  
 
 
-#7.ระหว่างคนที่เข้าคอร์สเตรียมสอบและไม่ได้เตรียมสอบมีคะแนนเฉลี่ยวิชาwritingเท่าไหร่
+#3.ระหว่างคนที่เข้าคอร์สเตรียมสอบและไม่ได้เตรียมสอบมีคะแนนเฉลี่ยวิชาwritingเท่าไหร่
 StudentsPerformance%>%group_by(`test preparation course`)%>%
   summarise(avg=mean(`writing score`))%>%  
   filter(`test preparation course` == 'completed')  
@@ -34,7 +34,7 @@ StudentsPerformance%>%group_by(`test preparation course`)%>%
   
   
 
-#8.แต่ละ parental level of education มี lunch แบบละเท่าใด
+#4.แต่ละ parental level of education มี lunch แบบละเท่าใด
 
 
 StudentsPerformance%>%group_by(`parental level of education`)%>%
