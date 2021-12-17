@@ -110,5 +110,5 @@ count(lunch)
 ![graph 2](graph2.png)
 
 ```
-มีจำนวนmaleที่ผู้ปกครองเรียนในhigh schoolมากกว่าfemale
+
 ```
