@@ -90,13 +90,14 @@ Ans
 
 ![graph 3](graph3.png)
 
-```
 ##graph3
+```
 StudentsPerformance %>% ggplot(aes(x= lunch)) + geom_bar(aes(fill=`race/ethnicity` ))+ ggtitle("กราฟแสดงประเภทอาหารกลางวันของแต่ละเชื้อชาติ")
 
 ```
 ![graph 4](graph4.png)
 
+##graph4
 ```
 StudentsPerformance %>% ggplot(aes(x= `gender`)) + geom_bar(aes(fill=`race/ethnicity`))+ ggtitle("กราฟแสดงจำนวนเชื้อชาติของแต่ละเพศ")
 
