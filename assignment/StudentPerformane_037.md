@@ -18,11 +18,12 @@ View(StudentsPerformance)
 
 ## 5.เพศที่มีการเข้าคอร์สเตรียมสอบมากที่สุด
 
+เพื่อหาเฉพาะนักเรียนที่มีการเข้าคอร์สจึงใช้ filterเพื่อกรองเอา "none"ออกและ กรุ๊ปgender จากนั้นcountออกมา
 
 ```
 StudentsPerformance_original %>% select(test.preparation.course,gender) %>% filter(test.preparation.course != "none") %>% group_by(gender) %>% count() %>% arrange(desc(n))
 ```
-เพื่อหาเฉพาะนักเรียนที่มีการเข้าคอร์สจึงใช้ filterเพื่อกรองเอา "none"ออกและ กรุ๊ปgender จากนั้นcountออกมา
+
 
 Ans
 ```
@@ -34,6 +35,8 @@ Ans
 
 
 ## 6.นักเรียนกินอาหารแบบไหนมากที่สุด
+
+กรุ๊ป lunch เพื่อจัดกลุ่มนับ count ออกมา เรียงด้วย  arrange(desc(n)
 
 ```
 StudentsPerformance_original %>% group_by(lunch) %>% count() %>% arrange(desc(n))
@@ -54,6 +57,8 @@ Ans
 
 ## 7.นักเรียนเชื้อชาติใดที่คะแนนreadingมากกว่าค่าเฉลี่ยเยอะที่สุด
 
+ต้องการข้อมูลเฉพาะของนักเรียนที่คะแนนreadingมากกว่าค่าเฉลี่ย จึงใช้filter(reading.score>mean(reading.score)) เพื่อกรอง และกรุ๊ป เชื้อชาติ และcountออกมาเพื่อหาจำนวนนร.แต่ละเชื้อชาติที่filterแล้ว
+
 ```
 StudentsPerformance_original %>% filter(reading.score>mean(reading.score)) %>% group_by(race.ethnicity) %>% count()%>% arrange(desc(n))
 ```
@@ -72,6 +77,8 @@ Ans
 
 
 ## 8.นักเรียนที่คะแนนคณิตศาสตร์ตํ่ากว่า50 กินอาหารแบบใดมากที่สุด
+
+ต้องการข้อมูลเฉพาะของนักเรียนที่คะแนนคณิตศาสตร์ตํ่ากว่า50 จึงใช้filter(math.score<50) เพื่อกรอง และกรุ๊ป อาหาร และcountออกมาเพื่อหาจำนวนนรแต่ละประเภทอาหารที่filterแล้ว
 
 ```
 StudentsPerformance_original %>% filter(math.score<50) %>% group_by(lunch) %>% count()%>% arrange(desc(n))
