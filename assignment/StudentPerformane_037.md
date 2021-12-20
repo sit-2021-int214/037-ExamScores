@@ -20,8 +20,10 @@ View(StudentsPerformance)
 
 ```
 StudentsPerformance_original %>% select(test.preparation.course,gender) %>% filter(test.preparation.course != "none") %>% group_by(gender) %>% count() %>% arrange(desc(n))
+```
 
-
+Ans
+```
   gender     n
   <chr>  <int>
 1 female   184
@@ -33,7 +35,11 @@ StudentsPerformance_original %>% select(test.preparation.course,gender) %>% filt
 
 ```
 StudentsPerformance_original %>% group_by(lunch) %>% count() %>% arrange(desc(n))
+```
 
+
+Ans
+```
  Groups:   lunch [2]
   lunch            n
   <chr>        <int>
@@ -49,7 +55,7 @@ StudentsPerformance_original %>% group_by(lunch) %>% count() %>% arrange(desc(n)
 ```
 StudentsPerformance_original %>% filter(reading.score>mean(reading.score)) %>% group_by(race.ethnicity) %>% count()%>% arrange(desc(n))
 ```
-
+Ans
 ```
 # Groups:   race.ethnicity [5]
   race.ethnicity     n
@@ -68,6 +74,8 @@ StudentsPerformance_original %>% filter(reading.score>mean(reading.score)) %>% g
 ```
 StudentsPerformance_original %>% filter(math.score<50) %>% group_by(lunch) %>% count()%>% arrange(desc(n))
 ```
+
+Ans
 ```
 # Groups:   lunch [2]
   lunch            n
