@@ -18,9 +18,11 @@ View(StudentsPerformance)
 
 ## 5.เพศที่มีการเข้าคอร์สเตรียมสอบมากที่สุด
 
+
 ```
 StudentsPerformance_original %>% select(test.preparation.course,gender) %>% filter(test.preparation.course != "none") %>% group_by(gender) %>% count() %>% arrange(desc(n))
 ```
+เพื่อหาเฉพาะนักเรียนที่มีการเข้าคอร์สจึงใช้ filterเพื่อกรองเอา "none"ออกและ กรุ๊ปgender จากนั้นcountออกมา
 
 Ans
 ```
