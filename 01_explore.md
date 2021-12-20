@@ -13,7 +13,7 @@ View(StudentsPerformance)
 
 ```
 
-## 5.raceใดที่มีคะแนนเฉลี่ยในmath scoreมากที่สุด
+## 1.raceใดที่มีคะแนนเฉลี่ยในmath scoreมากที่สุด
 ```
 StudentsPerformance%>%group_by(`race/ethnicity`)%>%
 summarise(avg=mean(`math score`))%>%
@@ -28,7 +28,7 @@ arrange(desc(`race/ethnicity`))%>%head(1)
 ## Ans
 group E เฉลี่ย 73.8
 
-## 6.คนที่เข้าคอร์สเตรียมสอบมีคะแนนวิชาreadingเฉลี่ยเท่าไหร่
+## 2.คนที่เข้าคอร์สเตรียมสอบมีคะแนนวิชาreadingเฉลี่ยเท่าไหร่
 ```
 StudentsPerformance%>%group_by(`test preparation course`)%>%
 summarise(avg=mean(`reading score`))%>%  
@@ -44,7 +44,7 @@ filter(`test preparation course` == 'completed')
 
 
 
-## 7.ระหว่างคนที่เข้าคอร์สเตรียมสอบและไม่ได้เตรียมสอบมีคะแนนเฉลี่ยวิชาwritingต่างกันเท่าไหร่
+## 3.ระหว่างคนที่เข้าคอร์สเตรียมสอบและไม่ได้เตรียมสอบมีคะแนนเฉลี่ยวิชาwritingต่างกันเท่าไหร่
 
 ```
 StudentsPerformance%>%group_by(`test preparation course`)%>%
@@ -74,7 +74,7 @@ filter(`test preparation course` == 'none')
 
   
 
-## 8.แต่ละ parental level of education มี lunch แบบละเท่าใด 
+## 4.แต่ละ parental level of education มี lunch แบบละเท่าใด 
 ```
 StudentsPerformance%>%group_by(`parental level of education`)%>%
 count(lunch)  
@@ -109,6 +109,3 @@ count(lunch)
 ```
 ![graph 2](graph2.png)
 
-```
-มีจำนวนmaleที่ผู้ปกครองเรียนในhigh schoolมากกว่าfemale
-```
