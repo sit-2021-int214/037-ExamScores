@@ -13,6 +13,15 @@ View(StudentsPerformance)
 
 ```
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+>>>>>>> Stashed changes
 ## 1.raceใดที่มีคะแนนเฉลี่ยในmath scoreมากที่สุด
 ```
 StudentsPerformance%>%group_by(`race/ethnicity`)%>%
@@ -109,3 +118,10 @@ count(lunch)
 ```
 ![graph 2](graph2.png)
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+>>>>>>> Stashed changes
