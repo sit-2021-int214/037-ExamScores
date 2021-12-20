@@ -111,10 +111,3 @@ count(lunch)
 ```
 ![graph 2](graph2.png)
 
-<<<<<<< Updated upstream
-=======
-
-
-
-
->>>>>>> Stashed changes
