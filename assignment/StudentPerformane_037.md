@@ -85,7 +85,16 @@ Ans
 ```
 
 
+## กราฟ
 
+
+![graph 3](graph3.png)
+
+```
+
+
+```
+![graph 4](graph4.png)
 
 
 
